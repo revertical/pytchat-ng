@@ -116,6 +116,8 @@ def get_channelid_2nd(client, video_id):
     
     match = re.search(PATTERN_M_CHANNEL, resp.text)
     if match is None:
+        print(resp.url)
+        print(resp.text[:5000])
         raise InvalidVideoIdException(f"Cannot find channel id for video id:{video_id}. This video id seems to be invalid.")
     try:
         ret = match.group(1)

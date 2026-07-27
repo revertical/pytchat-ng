@@ -16,7 +16,6 @@ Other features:
 instead of web scraping.
 
 For more detailed information, see [wiki](https://github.com/taizan-hokuto/pytchat/wiki). <br>
-[wiki (Japanese)](https://github.com/taizan-hokuto/pytchat/wiki/Home_jp)
 
 ## Install
 ```python

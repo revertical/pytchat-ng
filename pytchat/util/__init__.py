@@ -100,7 +100,7 @@ def extract_video_id(url_or_id: str) -> str:
 
 
 def get_channelid(client, video_id):
-    resp = client.get("https://www.youtube.com/embed/{}".format(quote(video_id)), headers=config.headers)  
+    resp = client.get(f"https://www.youtube.com/embed/{video_id}", headers=config.headers)  
     match = re.search(PATTERN_CHANNEL, resp.text)
     try:
         if match is None:

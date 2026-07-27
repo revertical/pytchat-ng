@@ -218,7 +218,7 @@ class LiveChatAsync:
             self._pauser.put_nowait(None)
             if not self._is_replay:
                 async with self._client as client:
-                    channel_id = await util.get_channelid_async(client, self.video_id)
+                    channel_id = await util.get_channelid_async(client, self._video_id)
                     continuation = liveparam.getparam(self._video_id, 
                                     channel_id,
                                     past_sec=3)

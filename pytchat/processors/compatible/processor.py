@@ -49,6 +49,7 @@ class CompatibleProcessor(ChatProcessor):
     def parse(self, sitem):
 
         action = sitem.get("addChatItemAction")
+        item = None
         if action:
             item = action.get("item")
         if item is None:

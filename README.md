@@ -1,7 +1,7 @@
-pytchat
+pytchat-ng
 =======
 
-pytchat is a python library for fetching youtube live chat.
+pytchat-ng is a python library for fetching youtube live chat (Next Generation).
  
 
 <br><br><br>

@@ -7,7 +7,8 @@ name = "pytchat-ng"
 version = "0.5.6"
 description = "a python library for fetching youtube live chat. (next generation)"
 readme = "README.md"
-license = {text = "MIT"}
+license = "MIT"
+license-files = ["LICENSE"]
 requires-python = ">=3.7"
 authors = [
     {name = "revertical", email = "screenkidgreen7@gmail.com"},

@@ -17,6 +17,8 @@ MAX_RETRY = 10
 class PytchatCore:
     '''
 
+    core pytchat object
+
     Parameter
     ---------
     video_id : str

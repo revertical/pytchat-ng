@@ -19,7 +19,7 @@ For more detailed information, see [wiki](https://github.com/taizan-hokuto/pytch
 
 ## Install
 ```python
-pip install pytchat
+pip install pytchat-ng
 ```
 ## Examples
 

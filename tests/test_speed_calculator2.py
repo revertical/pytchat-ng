@@ -12,5 +12,4 @@ def test_speed_1():
         speed = stream.get()
         assert speed > 100
         break
-test_speed_1()
     

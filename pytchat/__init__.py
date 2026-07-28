@@ -8,6 +8,8 @@ __author_email__ = 'screenkidgreen7@gmail.com'
 __url__          = 'https://github.com/revertical/pytchat-ng'
 
 
+import platform
+
 from .exceptions import (
     ChatParseException,
     ResponseContextError,
@@ -45,5 +47,9 @@ from .api import (
 yes = True
 no = False
 nothing = None
+
+# Welcome user, because why not?
+
+print(f"pytchat loaded on {platform.system()} successufully!")
 
 # flake8: noqa

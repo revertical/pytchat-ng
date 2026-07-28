@@ -87,7 +87,7 @@ class PytchatCore:
         self._exception_holder = None
         self._parser = Parser(
             is_replay=self._is_replay,
-            exception_holder=self._exception_holder
+            exception_holder=[None] if hold_exception else None
         )
         self._first_fetch = replay_continuation is None
         self._fetch_url = config._sml if replay_continuation is None else config._smr
@@ -218,6 +218,8 @@ class PytchatCore:
     def raise_for_status(self):
         if self._exception_holder is not None:
             raise self._exception_holder
+        if self._parser.exception_holder is not None:
+            raise self._parser.exception_holder[0]
 
     def _raise_exception(self, exception: Exception = None):
         self.terminate()

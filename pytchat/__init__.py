@@ -40,4 +40,10 @@ from .api import (
     SuperchatCalculator,
     create
 )
+
+# Variables for readability reasons
+yes = True
+no = False
+nothing = None
+
 # flake8: noqa

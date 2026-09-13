@@ -1,6 +1,4 @@
 import datetime
-import httpx
-import json
 import os
 import re
 from urllib.parse import quote
@@ -20,14 +18,6 @@ YT_VIDEO_ID_LENGTH = 11
 CLIENT_VERSION = ''.join(("2.", (datetime.datetime.today() - datetime.timedelta(days=1)).strftime("%Y%m%d"), ".01.00"))
 
 UA = config.headers["user-agent"]
-
-
-def extract(url):
-    _session = httpx.Client(http2=True)
-    html = _session.get(url, headers=config.headers)
-    with open(str(datetime.datetime.now().strftime('%Y-%m-%d %H-%M-%S')
-                  ) + 'test.json', mode='w', encoding='utf-8') as f:
-        json.dump(html.json(), f, ensure_ascii=False)
 
 
 def save(data, filename, extention) -> str:
